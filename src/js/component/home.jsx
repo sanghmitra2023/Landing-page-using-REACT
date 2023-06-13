@@ -1,26 +1,64 @@
 import React from "react";
+import Navbar from "./Navbar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import BootstrapCard from "./BootstrapCard.jsx";
+import Footer from "./Footer.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+    return (
+      <div>
+        <Navbar/>
+        <Jumbotron/>
+        <div className="row gap-3 mb-3 m-3">
+        <div className="col">
+          <div className="card">
+            <BootstrapCard
+              title="Card Title"
+              imageUrl={"https://fakeimg.pl/500x350"}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              buttonLabel="Click Me"
+            />, 
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <BootstrapCard
+              title="Card Title"
+              imageUrl={"https://fakeimg.pl/500x350"}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              buttonLabel="Click Me"
+            />, 
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <BootstrapCard
+              title="Card Title"
+              imageUrl={"https://fakeimg.pl/500x350"}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              buttonLabel="Click Me"
+            />, 
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <BootstrapCard
+              title="Card Title"
+              imageUrl={"https://fakeimg.pl/500x350"}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              buttonLabel="Click Me"
+            />, 
+          </div>
+        </div>
+        </div>
+        <Footer/>
+      </div>
+      
+      );
+    };
+    
+    
 
-export default Home;
+export default Home
